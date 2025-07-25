@@ -1,0 +1,92 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #c7ca8eb4;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: rgb(255, 228, 228);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Título principal */
+.title {
+  color: #FF6B00;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Lista de productos */
+.product-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.product-item {
+  background-color: #f0d5ad;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-3px);
+  background-color: #FFCC80;
+}
+
+/* Contacto */
+.contact-text {
+  text-align: center;
+  margin: 30px 0;
+  color: #555;
+}
+
+.contact-link {
+  color: #FF6B00;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.contact-link:hover {
+  color: #E65100;
+  text-decoration: underline;
+}
+
+/* Imagen */
+.food-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border: 5px solid #FFE0B2;
+}
+
+/* Diseño responsive */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .product-item {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}

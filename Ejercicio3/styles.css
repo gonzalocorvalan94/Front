@@ -1,0 +1,68 @@
+/* ===== RESET BÁSICO ===== */
+body {
+  margin: 0; /* Elimina los márgenes por defecto del navegador */
+  font-family: 'Arial', sans-serif; /* Fuente principal con fallback genérico */
+}
+
+/* ===== BARRA DE NAVEGACIÓN ===== */
+.navbar {
+  display: flex; /* Activa flexbox para alinear hijos */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Separa el brand y la lista */
+  background-color: #8cc7f8;
+  padding: 1rem;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #414d5a;
+  text-decoration: none;
+}
+/* ===== LISTA DE NAVEGACIÓN ===== */
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ===== ENLACES ===== */
+.nav-link {
+  /* Estilos de texto */
+  text-decoration: none; /* Elimina el subrayado por defecto */
+  color: #06030a; /* Color oscuro con buen contraste */
+  font-weight: bold; /* Texto en negrita */
+  font-size: 1.1rem; /* Tamaño ligeramente mayor que el texto normal */
+  letter-spacing: 0.5px; /* Espaciado entre letras para mejor legibilidad */
+  
+  /* Espaciado y caja */
+  padding: 0.5rem; /* Espacio interno clickeable */
+  display: inline-block; /* Permite aplicar transformaciones y padding correctamente */
+  
+  /* Transiciones para efectos suaves */
+  transition: all 0.3s ease ; /* Anima todos los cambios de propiedad */
+  
+  /* Accesibilidad */
+  position: relative; /* Necesario para efectos avanzados */
+}
+
+/* ===== ESTADO HOVER ===== */
+.nav-link:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+  color: #3498DB; /* Color más oscuro al interactuar */
+  transform: translateY(-1px); /* Efecto de levitación sutil */
+}
+
+
+
+/* ===== ESTADO ACTIVE (CLIC) ===== */
+.nav-link:active {
+  transform: scale(0.98); /* Efecto de "presionado" */
+  color: #0066cc; /* Cambio de color al hacer clic */
+}
+
+/* ===== INDICADOR DE PÁGINA ACTUAL ===== */
+.nav-link[aria-current="page"] {
+  border-bottom: 2px solid #0066cc; /* Subrayado permanente para la página actual */
+}
